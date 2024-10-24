@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 
 app.post('/send-email', async (req, res) => {
   const { queryType, subject, text } = req.body;
-
+console.log(req)
   const defaultEmail = 'enquirygdgoenka@gmail.com';
 
   let toEmail;

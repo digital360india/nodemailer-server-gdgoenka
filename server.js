@@ -47,7 +47,7 @@ app.post('/send-email', async (req, res) => {
   }
 
   // Dynamically build the email content
-  let emailContent = `Name: ${student_name}\nMobile: ${mobile}\nClass: ${classNum}\nEmail: ${email}`;
+  let emailContent = `Name: ${student_name}\nMobile: ${mobile}\n ${classNum}\nEmail: ${email}`;
 
   // Add optional fields if they exist
   if (dob) emailContent += `\nDate of Birth: ${dob}`;
